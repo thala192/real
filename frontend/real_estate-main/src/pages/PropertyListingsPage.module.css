@@ -1,0 +1,29 @@
+.sortAndFilterParent {
+  margin-top: 90px;
+  padding: 0 90px;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.sortAndFilterParent {
+  display: flex;
+  gap: 20px;
+}
+
+.propertyCardWrapper {
+  /* flex: 1 1 300px; Flex-grow, flex-shrink, flex-basis */
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.linkWrapper {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .propertyListingsPage {
+    padding: 10px;
+  }
+}

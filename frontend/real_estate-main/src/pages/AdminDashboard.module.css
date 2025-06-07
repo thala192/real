@@ -1,0 +1,84 @@
+/* AdminDashboard.module.css */
+.adminDashboard {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  margin-top: 72px;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #1f2937; /* dark gray */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  gap: 1rem;
+  position: sticky;
+  top: 0;
+  height: 80vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.sidebarText {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.sidebarText:hover {
+  background-color: #374151; /* lighter gray */
+}
+
+.activeSidebarText {
+  background-color: #2563eb; /* blue */
+  color: #fff;
+}
+
+.logoutButton {
+  margin-top: auto;
+  padding: 0.75rem 1rem;
+  background-color: #ef4444; /* red */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.logoutButton:hover {
+  background-color: #dc2626;
+}
+
+.content {
+  flex: 1;
+  padding: 0 2rem;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .adminDashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .logoutButton {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}

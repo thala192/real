@@ -1,0 +1,114 @@
+.currPage,
+.notCurrPage {
+  height: 40px;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.currPage {
+  color: #ffffff;
+  background-color: #2697e0;
+}
+
+.notCurrPage {
+  color: #d1d1d1;
+}
+
+.notCurrPage:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.sidebar {
+  /* position: sticky;
+  top: 5vh; */
+  left: 0;
+  width: 260px;
+  height: 100vh;
+  background-color: #2c2c2c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+  border-radius: 0 16px 16px 0;
+  font-family: "Montserrat", sans-serif;
+  z-index: 100;
+  padding: 30px 20px;
+  /* margin-top: 50px; */
+}
+
+.sidebar div {
+  margin-bottom: 15px;
+}
+
+.logoutPopup {
+  position: fixed;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 24px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  z-index: 101;
+  border-radius: 10px;
+  width: 320px;
+  text-align: center;
+}
+
+.logoutMessage {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.logoutButtons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.logoutButton,
+.cancelButton {
+  padding: 10px 20px;
+  border: none;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logoutButton {
+  background-color: #ffffff;
+  color: #2697e0;
+  border: 2px solid #2697e0;
+}
+
+.logoutButton:hover {
+  background-color: #2697e0;
+  color: #ffffff;
+}
+
+.cancelButton {
+  background-color: #2697e0;
+  color: white;
+  border: none;
+}
+
+.cancelButton:hover {
+  background-color: #1a6fa5;
+}
+
+@media screen and (max-width: 708px) {
+  .sidebar {
+    display: none;
+  }
+}

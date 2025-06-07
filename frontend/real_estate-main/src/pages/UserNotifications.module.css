@@ -1,0 +1,78 @@
+.userNotifications {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.sidebarParent {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin-top: 90px;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+.emptyStateWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.emptyState {
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.image {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.messageTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.messageSubtitle {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebarParent {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .emptyStateWrapper {
+    padding: 2rem 1rem;
+  }
+
+  .messageTitle {
+    font-size: 1.1rem;
+  }
+
+  .messageSubtitle {
+    font-size: 0.95rem;
+  }
+}
